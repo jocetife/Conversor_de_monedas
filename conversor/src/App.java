@@ -1,8 +1,13 @@
+import java.util.Scanner;
+import conversor.Conversor;
+
 public class App {
     public static void pretty(String parte1, String parte2) {
         System.out.printf("%s                       %s\n", parte1, parte2);
     }
     public static void main(String[] args) throws Exception {
+        int opcion;
+        Scanner scanner = new Scanner(System.in);
         System.out.println("**********************************");
         System.out.println("Bienvenido al conversor de moneda :)\n");
         System.out.println("-------------------CAMBIOS-------------------");
@@ -12,7 +17,10 @@ public class App {
         pretty("4) Real Brasileño","Dolar");
         pretty("5) Dolar","Peso Colombiano");
         pretty("6) Peso Colombiano","Dolar");
-        System.out.println("7) Salir");
-
+        System.out.println("7) Salir\n");
+        System.out.println("Elija una opcion: ");
+        opcion = scanner.nextInt();
+        Conversor conversor = new Conversor();
+        conversor(opcion);
     }
 }
