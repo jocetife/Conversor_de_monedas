@@ -2,7 +2,9 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import com.google.gson.Gson;
+
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 
 public class ConsultaMoneda {
@@ -15,8 +17,14 @@ public class ConsultaMoneda {
             .send(request, HttpResponse.BodyHandlers.ofString());
         //String json = response.body();
         //System.out.println(json);
-        Map<String, Moneda> monedas = new Gson().fromJson(response.body(), new TypeToken<Map<String, Moneda>>(){}.getType());
-        return monedas.get(moneda);
+        JsonObject json = JsonParser.parseString(response.body()).getAsJsonObject();
+        JsonObject rates = json.getAsJsonObject("conversion_rates");
+        String usd = String.valueOf(rates.get("USD").getAsDouble());
+        String ars = String.valueOf(rates.get("ARS").getAsDouble());
+        String brl = String.valueOf(rates.get("BRL").getAsDouble());
+        String cop = String.valueOf(rates.get("COP").getAsDouble());
+
+        return new Moneda(usd, ars, brl, cop);
         }
         catch (Exception e) {
             throw new RuntimeException("No se pudo obtener la moneda: " + moneda, e);
