@@ -12,6 +12,8 @@ public class ConsultaMoneda {
         try {
         HttpResponse<String> response = client
             .send(request, HttpResponse.BodyHandlers.ofString());
+        //String json = response.body();
+        //System.out.println(json);
         return new Gson().fromJson(response.body(), Moneda.class);
         }
         catch (Exception e) {
