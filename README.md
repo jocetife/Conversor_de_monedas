@@ -7,10 +7,14 @@ This project consists of developing a currency converter. It demonstrates how to
 The application is implemented as a console program that displays a menu and a welcome message.
 
 - Users can select from multiple conversion options.
+  - <img width="423" height="182" alt="image" src="https://github.com/user-attachments/assets/9938727f-1c9e-4b66-ba4a-fc52f28f7c80" />
 
 - The program accepts user input, such as converting 25 USD to Argentine Pesos or 250 BRL to USD, and outputs the resulting amount.
+  - <img width="433" height="246" alt="image" src="https://github.com/user-attachments/assets/c65bdfa3-d77e-4561-a50e-48f1969ea750" />
 
 - The menu runs within a loop, allowing multiple conversions until the user decides to exit.
+  - <img width="422" height="305" alt="image" src="https://github.com/user-attachments/assets/4e7506d5-14a5-412b-93c0-a2d1e4646d79" />
+ 
 
 ## Workflow
 
