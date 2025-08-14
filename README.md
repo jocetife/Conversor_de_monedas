@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-=======
 # Currency Converter Challenge
 
 This project consists of developing a currency converter. It demonstrates how to work with currency exchange rates and provides practical experience in consuming APIs.
@@ -57,4 +37,4 @@ Completing this project allows participants to practice:
 - Using agile project management tools like Trello.
 
 - Developing collaboration and project management skills applicable to real-world software development.
->>>>>>> b389a492ae89309999861dd9a33a2ef1789e0f9a
+
