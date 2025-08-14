@@ -1,8 +1,8 @@
-#Currency Converter Challenge
+# Currency Converter Challenge
 
 This project consists of developing a currency converter. It demonstrates how to work with currency exchange rates and provides practical experience in consuming APIs.
 
-##Project Overview
+## Project Overview
 
 The application is implemented as a console program that displays a menu and a welcome message.
 
@@ -12,7 +12,7 @@ The application is implemented as a console program that displays a menu and a w
 
 - The menu runs within a loop, allowing multiple conversions until the user decides to exit.
 
-##Workflow
+## Workflow
 
 The project is organized using Trello and follows agile methodology:
 
@@ -26,7 +26,7 @@ The project is organized using Trello and follows agile methodology:
 
 - Additional optional tasks are available to enhance and customize the application.
 
-##Learning Outcomes
+## Learning Outcomes
 
 Completing this project allows participants to practice:
 
